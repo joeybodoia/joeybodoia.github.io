@@ -1,0 +1,769 @@
+/* superman yellow: (255,235,0) */
+
+
+body {
+    background-color:rgba(13, 132, 223, 0.9);
+}
+
+header {
+    /* max-height:340px; */
+    width: 90%;
+    border: 2px solid black;
+    text-align: center;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    background-color: rgb(247, 10, 10);
+    
+}
+
+
+
+header h1 {
+    display: flex;
+    align-self: center;
+    font-family: 'Bangers', cursive;
+    font-size: 7vw;
+    text-shadow: 3px 3px 3px white;
+}
+
+
+header .allMight {
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid black; */
+    display: flex;
+    order: 0;
+    background-color:rgb(247, 10, 10);
+    align-self: flex-end;
+   
+    
+}
+
+header .goku {
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid black; */
+    display: flex;
+    order: 0;
+    background-color: rgb(247, 10, 10);
+    align-self: flex-end;
+}
+
+/* blockquote.bubble { 
+	background-position: center;
+  background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+  margin: 0 auto;
+ 
+  
+	}
+
+blockquote.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  height: 50px;
+  width: 20%;
+  padding-top: 6%;
+    padding-bottom: 20%;
+    transform: rotate(100deg);
+} */
+
+
+
+#drag {
+    margin-top: 5%;
+    margin:auto;
+    height: 50px;
+    width:89%;
+    /* border: 2px solid black; */
+    padding-left: 10px;
+    font-size: 3vw;
+    margin-bottom: 3%;
+    font-family: 'Bangers', cursive;
+    text-shadow: 1px 1px 1px white;
+    display: none;
+}
+
+#buttonContainer {
+    margin-top: 10%;
+    width: 90%;
+    margin:auto;
+    /* height: 30px; */
+    /* width:88%; */
+    
+    /* border: 2px solid black; */
+    
+}
+
+#generate {
+    margin-top: 2%;
+    padding-right: 1%;
+    background-color: rgb(247, 10, 10);
+    font-family: 'Bangers', cursive;
+    font-size: 4vw;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 10px;
+}
+
+
+.characterPics {
+    margin-top: 20px;
+    /* height: 200px; */
+    width: 90%;
+    /* margin: auto; */
+    /* border: 2px solid black; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    /* flex-grow: 1; */
+    /* flex-wrap: wrap; */
+}
+
+/* .pics {
+    height: 20%;
+    width:10%;
+    border: 2px solid red;
+    margin-right: 5px;
+    margin-top: 5px;
+
+} */
+
+
+/* .pics {
+    margin-right: 10px;
+    margin-left: 10px;
+} */
+
+.drag {
+    height: 49.6%;
+    width: 19.6%;
+    max-width: 150px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#arena {
+    margin-top: 15%;
+    /* height: 70px; */
+    width: 90%; 
+    margin: auto;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 3vw;
+    text-shadow: 2px 2px 2px rgb(255,235,0);
+    margin-bottom: -5%;
+}
+
+
+#battleArena {
+    /* margin-top: 20px; */
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.startButton {
+    margin-top: 2%;
+    height:10%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(255,235,0);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+    padding-right: 7px;
+    margin: auto;
+    margin-bottom: 20%; */
+}
+
+#start {
+    height: 100%;
+    background-color: rgb(247, 10, 10);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+    padding-right: 1%;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+
+
+#container {
+    margin-top:5%;
+    height: 800px;
+    width: 90%;
+    border: 2px solid black;
+    background-color:rgb(255,235,0);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin: auto;
+    /* display: none; */
+
+}
+#player1 {
+    background-color: rgb(247, 10, 10);
+    height: 50%;
+    width: 30%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    /* height: 65%;
+    width:40%;
+    border: 2px solid black;
+    background-color:rgb(247, 10, 10);
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column; */
+}
+
+#player1 h1 {
+    height:10%;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 3vw;
+    text-shadow: 1px 1px 1px white;
+    width: 100%;
+    
+}
+
+#versus {
+    text-align: center;
+    /* margin: auto; */
+    height: 10%;
+    width: 27%;
+    font-family: 'Bangers', cursive;
+    font-size: 5vw;
+    text-shadow: 1px 1px 1px rgb(247, 10, 10);
+}
+
+#player2 {
+    background-color: rgb(247, 10, 10) ;
+    height: 50%;
+    width: 30%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    /* height: 65%;
+    width:24%;
+    border: 2px solid black;
+    background-color:rgb(247, 10, 10);
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column; */
+}
+
+#player2 h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 3vw;
+    text-shadow: 1px 1px 1px white;
+    width: 100%;
+}
+
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+
+
+#modal-footer {
+    height:9%;
+    width: 100%;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    /* width:10% */
+    
+}
+
+/* #modal-textbox #lb {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+} */
+
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: black;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#modal-textbox {
+	background-color: rgba(13, 132, 223, 1);
+	height: 70%;
+    width: 80%;
+    border: 4px solid black;
+	/* border-radius: 2px; */
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	/* padding: 2%; */
+	line-height: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.showdown {
+    margin-top: -7%;
+    height:15%;
+    width:100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.showdown h1 {
+    font-size: 4vw;
+    font-family: 'Bangers', cursive;
+    text-shadow: 1px 1px 1px white;
+}
+.modalImage1 {
+    height:70%;
+    width:100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.modalImage2 {
+    height:70%;
+    width:100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+#modal-textbox #vs {
+    text-align: center;
+    /* margin: auto; */
+    height: 10%;
+    width: 10%;
+    align-self: center;
+    font-family: 'Bangers', cursive;
+    font-size: 5vw;
+    text-shadow: 1px 1px 1px rgb(247, 10, 10);
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    
+}
+
+#p1 {
+    border: 4px solid black;
+    background-color: rgb(247, 10, 10) ;
+    height: 60%;
+    width: 35%;
+    margin-left: 6%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* border: 2px solid black;
+    align-self: center;
+    margin-left: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center; */
+    
+}
+.player1Buttons {
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid rgb(247, 10, 10); */
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healthBar1 {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    border: 2px solid green;
+    background-color: green;
+    align-self: flex-end;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+#attack1{
+    height:60%;
+    width: 30%;
+    margin-left: 10px;
+    background-color: rgb(255,235,0);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+}
+
+#forfeit1 {
+    height:60%;
+    width: 30%;
+    margin-right: 10px;
+    background-color: rgb(255,235,0);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+}
+
+#checkStats1{
+    height:60%;
+    width: 30%;
+    background-color: rgb(255,235,0);
+    font-family: 'Bangers', cursive;
+    font-size: 1.5vw;
+}
+
+
+
+#p2 {
+    border: 4px solid black;
+    background-color: rgb(255,235,0);
+    height: 60%;
+    width: 35%;
+    margin-right: 6%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* border: 2px solid black;
+    align-self: center;
+    margin-right: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center; */
+}
+
+.healthBar2 {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    border: 2px solid green;
+    background-color: green;
+    align-self: flex-end;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+#attack2{
+    height:60%;
+    width: 30%;
+    margin-left: 10px;
+    background-color: rgb(247, 10, 10);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+}
+
+#forfeit2 {
+    height:60%;
+    width: 30%;
+    margin-right: 10px;
+    background-color: rgb(247, 10, 10);
+    font-family: 'Bangers', cursive;
+    font-size: 2vw;
+}
+
+#checkStats2{
+    height:60%;
+    width: 30%;
+    background-color: rgb(247, 10, 10);
+    font-family: 'Bangers', cursive;
+    font-size: 1.5vw;
+}
+
+
+
+
+#modal2 {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+#modal-textbox2 {
+	background-color: rgb(247, 10, 10);
+	height: 350px;
+	width: 550px;
+    /* border-radius: 2px; */
+    border: 4px solid black;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	padding: 2%;
+	line-height: 120%;
+	font-family: 'Bangers', cursive;
+}
+
+#modal-footer2 {
+	text-align: right;
+}
+
+/* h1 {
+	padding-bottom: 15px;
+} */
+
+.modal-buttons2 {
+	padding: 14px 18px;
+	background-color: rgb(255,235,0);
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Bangers', cursive;
+	cursor: pointer;
+}
+
+
+#modal3 {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+#modal-textbox3 {
+	background-color: rgb(247, 10, 10);
+	height: 350px;
+	width: 550px;
+    /* border-radius: 2px; */
+    border: 4px solid black;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	padding: 2%;
+	line-height: 120%;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal-footer3 {
+	margin-left: auto;
+}
+
+/* h1 {
+	padding-bottom: 15px;
+} */
+
+.modal-buttons3 {
+	padding: 14px 18px;
+	background-color: rgb(255,235,0);
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Bangers', cursive;
+	cursor: pointer;
+}
+
+
+#forfeit {
+    height: 10%;
+    width: 100%;
+    margin-top:-10%;
+    text-align:center;
+}
+
+#line2 {
+    height: 10%;
+    width: 100%;
+    margin-top:-10%;
+    text-align:center;
+
+}
+
+#close3 {
+    margin-left: auto;
+}
+
+
+#modal4 {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+#modal-textbox4 {
+	background-color: rgb(247, 10, 10);
+	height: 350px;
+	width: 550px;
+    /* border-radius: 2px; */
+    border: 4px solid black;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	padding: 2%;
+	line-height: 120%;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal-footer4 {
+	margin-left: auto;
+}
+
+/* h1 {
+	padding-bottom: 15px;
+} */
+
+.modal-buttons4 {
+	padding: 14px 18px;
+	background-color: rgb(255,235,0);
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Bangers', cursive;
+	cursor: pointer;
+}
+
+#attackMissed {
+    height: 20%;
+    width:100%;
+    /* border: 2px solid black; */
+    margin-top: -10%;
+    text-align: center;
+}
+/* .heathNButtons {
+    height: 20%;
+    width: 100%;
+    border: 3px solid white
+} */
+
+#modal5 {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+#modal-textbox5 {
+	background-color: rgb(247, 10, 10);
+	height: 350px;
+	width: 550px;
+    /* border-radius: 2px; */
+    border: 4px solid black;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	padding: 2%;
+	line-height: 120%;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal-footer5 {
+	margin-left: auto;
+}
+
+/* h1 {
+	padding-bottom: 15px;
+} */
+
+.modal-buttons5 {
+	padding: 14px 18px;
+	background-color: rgb(255,235,0);
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Bangers', cursive;
+	cursor: pointer;
+}
+
+#playerDefeated {
+    height: 20%;
+    width:100%;
+    /* border: 2px solid black; */
+    margin-top: -10%;
+    text-align: center;
+}
+
+#winner {
+    height: 20%;
+    width:100%;
+    /* border: 2px solid black; */
+    margin-top: -10%;
+    text-align: center;
+}
